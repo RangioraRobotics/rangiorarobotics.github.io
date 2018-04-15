@@ -1,0 +1,211 @@
+.dangertape{
+  background: repeating-linear-gradient(
+    45deg,
+    #FFCC00,
+    #FFCC00 10px,
+    #000000 10px,
+    #000000 20px
+    );
+  }
+
+.button{display:inline-block;position:relative;cursor:pointer;min-height:36px;min-width:88px;transition: all 0.4s;line-height:36px;vertical-align:middle;-webkit-box-align:center;-webkit-align-items:center;-webkit-align-items:center;align-items:center;text-align:center;-webkit-border-radius:2px;border-radius:2px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-user-select:none;-webkit-user-select:none;outline:none;border:0;padding:0 6px;margin:0px 0px;background:transparent;color:currentColor;white-space:nowrap;text-transform:uppercase;font-weight:500;font-size:14px;font-style:inherit;font-variant:inherit;font-family:inherit;text-decoration:none;overflow:hidden;-webkit-transition:box-shadow .4s cubic-bezier(0.25,0.8,0.25,1),background-color .4s cubic-bezier(0.25,0.8,0.25,1);-webkit-transition:box-shadow .4s cubic-bezier(0.25,0.8,0.25,1),background-color .4s cubic-bezier(0.25,0.8,0.25,1);transition:box-shadow .4s cubic-bezier(0.25,0.8,0.25,1),background-color .4s cubic-bezier(0.25,0.8,0.25,1);box-shadow:0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);transition:all .4s}
+.button:hover{
+  box-shadow:0 1px 6px 0 rgba(0,0,0,0.2), 0 1px 4px 0 rgba(0,0,0,0.14), 0 2px 4px -1px rgba(0,0,0,0.12);
+  /* color:#FFF; */
+}
+.button-blue{color: rgb(255,255,255);background-color: rgb(3,155,229);}
+.button-blue:hover{color: rgb(255,255,255);background-color: rgb(3, 109, 160);}
+
+.button-white{color:  rgb(3,155,229);background-color: rgb(255, 255, 255);}
+.button-white:hover{color:  rgb(3,155,229);background-color: rgb(235, 235, 235);}
+
+.button-red{color: rgb(255,255,255);background-color: rgb(229, 3, 3);}
+.button-red:hover{color: rgb(255,255,255);background-color: rgb(175, 0, 0);}
+
+.button-green{color: rgb(255,255,255);background-color:rgb(0, 204, 0);}
+.button-green:hover{color: rgb(255,255,255);background-color:rgb(0, 184, 0);}
+
+.hide{display:none}
+.noselect{user-select: none;-webkit-user-select:none;-moz-user-select:none;}
+a:hover{text-decoration: none!important;}
+*:focus, *:active{outline: none!important}
+
+body{
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  overflow-x:hidden;
+}
+.body{min-height:100vh}
+.navigation{
+  font-family: 'Gugi', sans-serif;
+  position: fixed;z-index:999999;
+  left:0px;top:0px;right:0px;
+  -webkit-user-select:none;
+  user-select: none;
+}
+
+.navigation .navibar{
+  padding: 1rem;white-space: nowrap;
+  position:relative;height:60px;
+  transition: all 0.3s;
+}
+
+.navigation .navibar span{
+  cursor: pointer;
+  vertical-align: center;
+  color:#FFF!important;
+}
+.navigation .navibar span a{
+  color:#FFF!important;
+  padding:20px;
+}
+.nav-title{
+  font-family: 'Gugi', sans-serif;
+}
+.navibar-left, .navibar-right{
+  display:inline-block;
+  position: absolute;
+
+  z-index:999;
+}
+
+.navibar-right{
+  right:10px;
+}
+#navbar-more{
+  margin-right:20px;
+}
+
+
+
+
+
+.nav-drawbg{
+  background-color:rgba(0,0,0,0.6);
+  position: fixed;
+  top:0px;right:0px;left:0px;bottom:0px;
+  z-index:9998;display:none;
+}
+.nav-draw{
+  width:00px;white-space: nowrap;
+  display:none;
+  position: fixed;
+  z-index:9999;overflow:auto;
+  background-color:#FFF;
+  height:100vh;top:0px;
+}
+.nav-draw a{
+  display:block;
+  padding:20px 20px 20px 35px;
+  color:#000;transition: all 0.3s;
+}
+.nav-draw a:hover{
+  background-color:rgb(200,200,200)
+}
+.nav-draw h1{
+  font-size:23px;
+  padding:20px;
+}
+
+@media screen and (max-width:928px) {
+  .navibar-right{display:none;}
+  .header-titlebox{width:90%!important;margin:auto!important;text-align: center!important;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Body-content */
+
+  /* Header */
+.header{
+  min-height:40vh;
+  margin-top:60px;
+  background-color:teal;
+  padding:50px;
+  font-family: 'Gugi', sans-serif;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.header-titlebox{
+  width:40vw;
+}
+.header-titlebox h1{
+  color:gold
+}
+.header-titlebox p{
+  color:#FFF;
+  font-family:"Roboto", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/* Email config */
+#emailmodal{z-index:19999}
+#emailmodal h1{
+  font-size:20px;font-weight: bold;
+  font-family: 'Gugi', sans-serif;
+
+}
+
+#emailmodal .modal-header .modal-title{
+  padding:7px;font-weight: bold;
+  color:#FFF;border-radius:5px;
+  background-color:rgba(0,0,0,0.7);
+}
+
+#disableemails, #enableemails{font-family: 'Gugi', sans-serif;}
+
+
+
+
+.gr-card{background-color:#FFF;border-bottom-right-radius: 3px;border-bottom-left-radius: 3px;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);overflow:hidden}
+.gr-card-head{height:150px;border-bottom:solid 0.3px rgba(0,0,0,0.4);background-position: center;background-size:cover;overflow:hidden;position: relative;}
+.gr-card-body{height:200px;border-bottom:solid 0.3px rgba(0,0,0,0.4);overflow:hidden;padding:20px;}
+.gr-card-foot{height:60px;padding:10px;overflow:hidden}
+
+.gr-card-head .gr-card-title{font-family:'Gugi', sans-serif;font-size:25px;position: absolute;bottom:10px;left:10px;background-color:rgba(0,0,0,0.7);padding:5px;border-radius:3px;color:#FFF;}
+
+.gr-card-title{font-family:'Gugi', sans-serif;font-size:25px;text-decoration: underline;}
+.gr-card-text{font-size:15px;font-family:"Roboto", sans-serif;}
+
+
+
+
+
+
+
+
+/* Footer */
+.footer{
+  background-color:rgb(24, 27, 30);
+  padding:20px;
+  box-shadow: 0 -1px 3px rgba(0,0,0,0.12), 0 -1px 2px rgba(0,0,0,0.24);
+  color:#FFF;
+}
+.footer-col2{text-align: right}
+
+
+@media screen and (max-width:928px) {
+  .footer{text-align: center!important}
+  .footer *{text-align: center!important;margin-top:10px;}
+}
