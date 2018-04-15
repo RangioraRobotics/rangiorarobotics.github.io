@@ -15,10 +15,11 @@ const dbRefVideos = firebase.database().ref().child('videos');
 
 
 dbRefImages.on('child_added', snap => {
-  const imgdiv = document.createElement('div');
+  const imgdiv = document.createElement('a');
   $(imgdiv).addClass("card");
   $(imgdiv).addClass("text-white");
   $(imgdiv).addClass("bg-dark");
+  $(imgdiv).attr("href", snap.val());
   const imgoverlay = document.createElement('div');
   $(imgoverlay).addClass("card-img-overlay");
   const imgtitle = document.createElement("h5");
