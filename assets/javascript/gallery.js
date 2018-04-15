@@ -20,6 +20,7 @@ dbRefImages.on('child_added', snap => {
   $(imgdiv).addClass("text-white");
   $(imgdiv).addClass("bg-dark");
   $(imgdiv).attr("href", snap.val());
+  $(imgdiv).attr("target", "_blank");
   const imgoverlay = document.createElement('div');
   $(imgoverlay).addClass("card-img-overlay");
   const imgtitle = document.createElement("h5");
