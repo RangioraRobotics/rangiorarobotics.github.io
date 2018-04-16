@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rangiora High Robotics</title>
+
+    <link rel="stylesheet" href="../assets/stylesheets/index.css">
+    <link rel="stylesheet" href="../assets/stylesheets/contact.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Gugi" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  </head>
+
+  <body class="bg-dark">
+
+    <div class="navigation">
+      <div class="navibar ">
+        <div class="navibar-left">
+          <span class="text-white" id="navbar-more"><i class="fa fa-bars fa-lg"></i></span>
+          <span class="nav-title"><a href="/">Rangiora High Robotics</a></span>
+        </div>
+        <div class="navibar-right">
+          <span><a href="/about">About</a></span>
+          <span><a href="/contact">Contact</a></span>
+          <span><a href="/gallery">Gallery</a></span>
+          <!-- <span><button class="button button-blue" data-toggle="modal" data-target="#emailmodal">Emails</button></span> -->
+        </div>
+      </div>
+
+
+      <div class="nav-draw">
+        <h1 class="nav-title">Rangiora High Robotics</h1>
+        <a href="javascript:void(0)" class="text-danger closeDraw button-ripple">Close</a>
+        <a class="text-dark button-ripple" href="/about">About</a>
+        <a class="text-dark button-ripple" href="/contact">Contact</a>
+        <a class="text-dark button-ripple" href="/gallery">Gallery</a>
+        <!-- <a class="text-primary closeDraw" href="javascript:void(0)"  data-toggle="modal" data-target="#emailmodal">Email / Account</a> -->
+      </div>
+
+      <div class="nav-drawbg"></div>
+    </div>
+
+    <!-- Content -->
+
+    <div class="body">
+
+        <header class="header">
+
+          <div class="header-titlebox">
+            <h1>Rangiora High Robotics<br />Contact</h1>
+            <p>Contact us here!</p>
+          </div>
+
+
+        </header>
+
+
+        <div class="m-5"></div>
+        <div class="container bg-white contactpage rounded p-5" style="min-height:70vh;overflow-x:hidden">
+
+          <h1 class="contacth1">Contact</h1><hr />
+          <p>Please make sure you real <a href="/about">This page</a> before asking to join. If you have any other questions, feel free to contact us below or arange meeting up with someone! We're pretty nice people.</p>
+
+
+          <form action="https://mail.google.com/mail/" target="_blank" method="get">
+
+            <input type="hidden" class="hide" name="to" value="16307@rangiorahigh.school.nz"/>
+            <input type="hidden" class="hide" name="fs" value="1"/>
+            <input type="hidden" class="hide" name="view" value="cm"/>
+
+            <label for="email-subjectselector">Select the subject</label>
+            <select class="custom-select" id="email-subjectselector">
+              <option selected value="0">Custom</option>
+              <option value="Joining the group">Joining the group</option>
+              <option value="General Questions">General Questions</option>
+              <option value="Meeting up">Meeting up</option>
+            </select><br /><br />
+
+            <input id="email-subject" type="text" name="su" class="form-control" placeholder="Subject"><br />
+            <textarea name="body" placeholder="Email Body" class="form-control"></textarea><br />
+
+            <button type="submit" class="button button-blue">SEND</button>
+
+          </form>
+
+
+        </div>
+
+
+
+        <!-- Footer -->
+        <div class="m-5"></div>
+        <footer class="footer noselect">
+
+          <div class="container">
+
+            <div class="row">
+              <div class="col-md-6">
+                <span class="text-muted">This website / group is not actually affiliated with Rangiora High School</span><br />
+                <a href="http://michael-leon-price.com" target="_blank" class="text-light">Site created by Michael Price</a>
+              </div>
+              <div class="col-md-6 footer-col2">
+                <!-- <button class="button button-blue" data-toggle="modal" data-target="#emailmodal">Email / Account</button><br /> -->
+                <a href="/about" class="p-2 text-white">About</a>
+                <a href="/contact" class="p-2 text-white">Contact</a>
+                <a href="/gallery" class="p-2 text-white">Gallery</a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </footer>
+
+        <!-- Footer ends -->
+
+
+
+
+
+
+
+
+        <!-- Email Modal -->
+        <div class="modal fade noselect" id="emailmodal" tabindex="-1" role="dialog" aria-labelledby="emailmodalTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header dangertape">
+                <h5 class="modal-title" id="emailmodalTitle">Email Config</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h1>Do you wanna be kept up to date?</h1>
+                <div class="emailmodal-loading"><b>Loading...</b></div>
+                <div class="email-loggedin hide">
+                  <p>You currently will recieve emails from us whenever we have any updates to share</p>
+                  <button id="disableemails" class="button button-red">Disable Emails / Delete Account</button>
+                </div>
+                <div class="email-not-loggedin hide">
+                  <p>You currently will <u>not</u> recieve emails from us whenever we have any updates to share</p>
+                  <p>To enable emails from us, click the button below. You will be prompted to log into your google account which will also create an account with us. You can delete this account whenever you want.</p>
+                  <button id="enableemails" class="button button-green">Enable Emails</button>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="button button-white" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Email Modal End -->
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="../assets/javascript/jquery-3.3.1.min.js" charset="utf-8"></script>
+
+
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <script src="../assets/javascript/app.js" charset="utf-8"></script>
+
+    <script src="../assets/javascript/popper.min.js" charset="utf-8"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="../assets/javascript/functions.js" charset="utf-8"></script>
+    <script src="../assets/javascript/contact.js" charset="utf-8"></script>
+
+  </body>
+
+  <!-- <script src="https://code.getmdl.io/1.3.0/material.min.js"></script> -->
+
+
+</html>
